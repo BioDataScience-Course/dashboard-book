@@ -46,11 +46,11 @@ Dans l'onglet `File`, puis `New File` et enfin `RMarkdown...` vous avez la possi
 
 Dans l'onglet `From Template` nous sélectionnons le `Flex Dashboard` et c'est fait. Un nouveau fichier R Markdown est préconfiguré pour nous permettre de nous lancer dans ce format de sortie dès plus sympathique. 
 
-![](images/dashboard0.gif) 
+![](images/dashboard/dashboard0.gif) 
 
 Analysons le template proposé et le rendu du tableau de bord.
 
-![](images/dashboard1.png) 
+![](images/dashboard/dashboard1.png) 
 
 Analysons ensemble le fichier .Rmd :
 
@@ -64,7 +64,7 @@ Analysons ensemble le fichier .Rmd :
 - On retrouve des chunks tout ce qu'il y a de plus courant maintenant dans un R Markdown.
 
 
-![](images/dashboard2.png)
+![](images/dashboard/dashboard2.png)
 
 Analysons le rendu en html :
 
@@ -75,9 +75,9 @@ Analysons le rendu en html :
 #### A vous de jouer ! {-}
 
 ```{block2, type = "bdd"}
-Est ce compliqué ? Nous ne le pensons pas. Laissez libre cours à votre imagination et surprenné nous avec des tableaux de bords des plus sophistiqués.
+Est ce compliqué ? Nous ne le pensons pas. Laissez libre cours à votre imagination et surprennez nous avec des tableaux de bords des plus sophistiqués.
 
-Lisez les proposition faites via le lien suivant :
+Lisez les propositions faites via le lien suivant :
 
   <https://rmarkdown.rstudio.com/flexdashboard/>
 ```

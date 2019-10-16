@@ -1,0 +1,4 @@
+bookdown::html_document2:
+    toc: true
+    toc_float: true
+    css: style.css
