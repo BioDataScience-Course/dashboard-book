@@ -1,0 +1,29 @@
+---
+title: "Page Navigation Menus"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
+---
+
+```{r setup, include=FALSE, echo = FALSE, message=FALSE}
+library(flexdashboard)
+
+```
+
+
+
+Page 1 {data-navmenu="Menu A"}
+=====================================
+
+
+Page 2 {data-navmenu="Menu A"}
+=====================================  
+
+
+Page 3 {data-navmenu="Menu B"}
+=====================================
+
+
+Page 4 {data-navmenu="Menu B"}
+=====================================  

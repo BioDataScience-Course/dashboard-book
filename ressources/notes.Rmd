@@ -1,0 +1,22 @@
+---
+title: "Réflexions et prise de notes sur la réalisation de tableau de bord"
+author: "Engels Guyliann"
+date: "`r Sys.Date()`"
+output: github_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Le point de départ de ma réfléxion sur les tableaux de bord est [flexdashboard for R](https://rmarkdown.rstudio.com/flexdashboard/index.html). Depuis de long mois, je souhaite proposer un tableau de bord. Il ne me manquait que du temps et un sujet intéressant et je pense l'avoir trouvé. On utilise un outil parce qu'il répond à une question précise et non par la simple envie de tester un outil. 
+
+Un tableau de bord peut être selon moi un outil intéressant lorsque nous avons :
+
+- des tableaux de données avec une structure inchangée et récurente comme une fichier texte fourni avec un instrument d'analyse.
+
+- une outil qui enregistre des données en continue et que l'on souhaite avoir une visualisation au cours du temps. Par exemple : l'évolution au cours du temps d'un aquarium. 
+
+- ...
+
+Je pensais avoir du mal à réaliser un dasboard neanmoins, cela est au final relativement simple.

@@ -1,0 +1,102 @@
+---
+title: "Seal AA3 "
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
+---
+
+```{r setup, include=FALSE, echo = FALSE, message=FALSE}
+library(flexdashboard)
+# Import package
+SciViews::R
+# import function
+source("R/read_aa3.R")
+
+calb <- read_calb_aa3(aa3_txt = "data/190930A.TXT")
+method <- read_method_aa3(aa3_txt = "data/190930A.TXT")
+meta <- read_metadata_aa3(aa3_txt = "data/190930A.TXT")
+aa3 <- read_raw_aa3(aa3_txt = "data/190930A.TXT")
+```
+
+Calibration
+================================================================================
+
+Column 
+-----------------------------------------------------------------------
+
+### Méthode `r first(meta$date_time)`
+
+```{r}
+knitr::kable(method)
+```
+
+### Calibration de la ligne $PO_4$
+
+```{r}
+chart(calb, PO4_conc ~ PO4_std) +
+  geom_point() +
+  geom_smooth(method = "lm", se = F)
+```
+
+
+Column 
+-----------------------------------------------------------------------
+
+### Calibration de la ligne $NO_x$
+
+
+```{r}
+chart(calb, NOx_conc ~ NOx_std) +
+  geom_point() +
+  geom_smooth(method = "lm", se = F)
+```
+
+### Calibration de la ligne $NH_4$
+
+```{r}
+chart(calb, NH4_conc ~ NH4_std) +
+  geom_point() +
+  geom_smooth(method = "lm", se = F)
+```
+
+
+Résultats
+================================================================================
+
+Column 
+-----------------------------------------------------------------------
+
+### Chart A
+
+```{r}
+
+```
+
+### Résultats de la ligne $PO_4$
+
+```{r}
+chart(aa3, PO4_conc ~ date_time) +
+  geom_line() + 
+  geom_point( aes( color = sample_type))
+```
+
+
+Column 
+-----------------------------------------------------------------------
+
+### Résultats de la ligne $NO_x$
+
+```{r}
+chart(aa3, NOx_conc ~ date_time) +
+  geom_line() + 
+  geom_point( aes( color = sample_type))
+```
+
+### Résultats de la ligne $NH_4$
+
+```{r}
+chart(aa3, NH4_conc ~ date_time) +
+  geom_line() + 
+  geom_point( aes( color = sample_type))
+```
