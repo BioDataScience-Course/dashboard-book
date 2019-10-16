@@ -7,5 +7,5 @@ Nous pouvons nous interroger sur l'utilité de réaliser un tableau de bord dans
 ## Organisation
 
 - dashboard.Rmd : document qui décrit la procédure afin de produire une tableau de bord avec le packge `flexdashboard`
-- ressources : 
+- ressources : dossier contenant des notes, des essais de tableaux de bords,...
 
