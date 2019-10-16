@@ -48,9 +48,9 @@ Dans l'onglet `From Template` nous sélectionnons le `Flex Dashboard` et c'est f
 
 ![](images/dashboard/dashboard0.gif) 
 
-Analysons le template proposé et le rendu du tableau de bord.
+## Décriptage du template
 
-![](images/dashboard/dashboard1.png) 
+### Le fichier R Markdwon 
 
 Analysons ensemble le fichier .Rmd :
 
@@ -63,14 +63,17 @@ Analysons ensemble le fichier .Rmd :
 
 - On retrouve des chunks tout ce qu'il y a de plus courant maintenant dans un R Markdown.
 
+![](images/dashboard/dashboard1.png) 
 
-![](images/dashboard/dashboard2.png)
+### Le fichier html
 
 Analysons le rendu en html :
 
 - Le format de sortie est bien un tableau de bords
 - Deux colonnes sont présentes de largeur différentes
 - Trois zones sont présentes 
+
+![](images/dashboard/dashboard2.png)
 
 #### A vous de jouer ! {-}
 
